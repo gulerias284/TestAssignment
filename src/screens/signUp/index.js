@@ -60,7 +60,6 @@ const SignUp = ({ navigation }) => {
             }
             break;
             case "password":{
-                console.log("type",type)
                 if(text === ""){
                     setPasswordStrength("Poor")
                     setError(prevError=>({...prevError,[type]:"Password field should not be empty."}))
@@ -77,7 +76,6 @@ const SignUp = ({ navigation }) => {
             }
             break;
             case "confirmPassword":{
-                console.log("type",type)
                 if(userDataState.password === ""){
                     setError(prevError=>({...prevError,password:"Please enter password first."}))
                 }else if(text === ""){

@@ -14,7 +14,6 @@ const Task2 = () => {
         }])
     }
     const onPressGeneratedButton =(id)=>{
-        console.log(buttons.filter(button=>button.id!==id))
         setButtons(prevState=>prevState?.filter(button=>button.id!==id))
     }
     const onPressLogOut=()=>{

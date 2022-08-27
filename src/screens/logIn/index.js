@@ -17,7 +17,6 @@ const LogIn = ({ navigation }) => {
     const [secureText,setSecureText]=useState(true)
 
     const handleInputChange = (text, type) => {
-        console.log("USERR",text,type,userCredentialState,error)
         setUserCredentialState(prevState=>({...prevState,[type]:text}))
         switch (type) {
             case "emailMobileNo": {
